@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Handeson's Home</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif; /* Fonte em Arial */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            background-color: #000000; /* Cor de fundo padrão */
+            color: #e0e0e0; /* Cor do texto para contraste */
+            background-image: url('fundo00.png'); /* Novo plano de fundo */
+            background-size: cover; /* Faz a imagem cobrir toda a área */
+            background-position: center; /* Centraliza a imagem de fundo */
+            background-repeat: no-repeat; /* Evita repetição da imagem */
+        }
+        header {
+            display: flex;
+            justify-content: center; /* Centraliza o título horizontalmente */
+            align-items: center; /* Alinha verticalmente o título e a imagem */
+            padding: 10px 20px; /* Ajusta o padding do cabeçalho */
+            color: #ffffff; /* Cor do texto do cabeçalho */
+            position: relative; /* Permite posicionar o conteúdo absolutamente dentro do cabeçalho */
+            background-color: rgba(0, 0, 0, 0.5); /* Adiciona uma leve sobreposição preta para melhor contraste com a imagem de fundo */
+        }
+        header img.profile {
+            width: 50px; /* Ajusta a largura da imagem */
+            height: 50px; /* Ajusta a altura da imagem */
+            border-radius: 50%; /* Faz a imagem ficar arredondada */
+            object-fit: cover; /* Garante que a imagem cubra a área sem distorção */
+            position: absolute; /* Posiciona a imagem em relação ao cabeçalho */
+            top: 10px; /* Espaço do topo do cabeçalho */
+            right: 20px; /* Espaço da direita do cabeçalho */
+        }
+        header h1 {
+            margin: 0; /* Remove a margem padrão do título */
+            font-size: 40px; /* Tamanho da fonte do título */
+            text-align: center; /* Centraliza o texto horizontalmente */
+            text-decoration: none; /* Remove sublinhado do título */
+        }
+        .navbar {
+            display: flex;
+            justify-content: center; /* Centraliza o menu horizontalmente */
+            background-color: #000; /* Cor de fundo do menu */
+            border-bottom: 1px solid #000; /* Borda inferior do menu */
+            padding: 10px 0; /* Espaçamento interno do menu */
+            position: relative; /* Permite posicionar o submenu em relação ao menu */
+        }
+        .navbar a {
+            color: #e0e0e0; /* Cor do texto do menu */
+            text-decoration: none; /* Remove sublinhado dos links */
+            padding: 10px 15px; /* Espaçamento interno dos itens do menu */
+            margin: 0; /* Remove margens entre os itens do menu */
+            display: block; /* Faz os itens do menu serem blocos para o padding funcionar */
+            border-radius: 5px; /* Arredonda os cantos dos itens do menu */
+            transition: background-color 0.3s ease; /* Transição suave de cor */
+        }
+        .navbar a:hover {
+            background-color: #333; /* Cor de fundo ao passar o mouse */
+        }
+        main {
+            padding: 20px;
+            flex: 1;
+        }
+        footer {
+            padding: 10px;
+            color: #e0e0e0; /* Cor do texto para contraste */
+            text-align: center; /* Centraliza o texto e os ícones */
+            display: flex;
+            flex-direction: column; /* Organiza o conteúdo do rodapé em coluna */
+            align-items: center; /* Centraliza o conteúdo horizontalmente */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="perfil.jpeg" alt="Perfil" class="profile">
+        <h1>Handeson's Home</h1>
+    </header>
+
+    <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="emconstrucao.html">Sobre</a>
+        <a href="emconstrucao.html">Serviços</a>
+        <a href="emconstrucao.html">Portfólio</a>
+        <a href="emconstrucao.html">Blog</a>
+        <a href="emconstrucao.html">Contato</a>
+        <a href="emconstrucao.html">FAQ</a>
+        <a href="emconstrucao.html">Termos</a>
+        <a href="emconstrucao.html">Política de Privacidade</a>
+        <a href="emconstrucao.html">Sitemap</a>
+    </nav>
+
+    <main>
+        <!-- Conteúdo principal da página vai aqui -->
+    </main>
+
+    <footer>
+        <!-- Rodapé sem ícones e textos removidos -->
+    </footer>
+</body>
+</html>
+
