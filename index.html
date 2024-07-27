@@ -77,6 +77,17 @@
             display: flex;
             flex-direction: column; /* Organiza o conteúdo do rodapé em coluna */
             align-items: center; /* Centraliza o conteúdo horizontalmente */
+            margin-top: auto; /* Faz o rodapé se mover para o fim da página */
+        }
+        footer p {
+            margin: 0; /* Remove a margem padrão do parágrafo */
+        }
+        footer a {
+            color: #e0e0e0; /* Cor dos links no rodapé */
+            text-decoration: none; /* Remove sublinhado dos links */
+        }
+        footer a:hover {
+            text-decoration: underline; /* Sublinha o link ao passar o mouse */
         }
         
         /* Estilos responsivos */
@@ -123,8 +134,6 @@
         <a href="emconstrucao.html">Softwares</a>
         <a href="emconstrucao.html">Scripts</a>
         <a href="emconstrucao.html">Outros</a>
-        <a href="emconstrucao.html">Blog</a>
-        <a href="emconstrucao.html">Contato</a>
     </nav>
 
     <main>
@@ -132,7 +141,7 @@
     </main>
 
     <footer>
-        <!-- Rodapé sem ícones e textos removidos -->
+        <p>Contato: <a href="mailto:handesonmiller@msn.com">handesonmiller@msn.com</a> / <a href="mailto:handesonpaiva@gmail.com">handesonpaiva@gmail.com</a></p>
     </footer>
 </body>
 </html>
