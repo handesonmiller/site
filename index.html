@@ -50,6 +50,7 @@
             border-bottom: 1px solid #000; /* Borda inferior do menu */
             padding: 10px 0; /* Espaçamento interno do menu */
             position: relative; /* Permite posicionar o submenu em relação ao menu */
+            flex-wrap: wrap; /* Permite que os itens do menu quebrem linha se necessário */
         }
         .navbar a {
             color: #e0e0e0; /* Cor do texto do menu */
@@ -59,6 +60,7 @@
             display: block; /* Faz os itens do menu serem blocos para o padding funcionar */
             border-radius: 5px; /* Arredonda os cantos dos itens do menu */
             transition: background-color 0.3s ease; /* Transição suave de cor */
+            white-space: nowrap; /* Impede a quebra de linha nos itens do menu */
         }
         .navbar a:hover {
             background-color: #333; /* Cor de fundo ao passar o mouse */
@@ -89,6 +91,16 @@
             }
             header h1 {
                 font-size: 24px; /* Reduz o tamanho da fonte do título */
+            }
+            .navbar {
+                flex-direction: column; /* Alinha os itens do menu verticalmente */
+                align-items: center; /* Centraliza os itens do menu */
+            }
+            .navbar a {
+                padding: 10px; /* Aumenta o padding dos itens do menu */
+                margin: 5px 0; /* Ajusta a margem entre os itens do menu */
+                width: 100%; /* Faz com que os links do menu ocupem a largura total */
+                text-align: center; /* Centraliza o texto dos links */
             }
             main {
                 padding: 10px; /* Reduz o padding do conteúdo principal */
