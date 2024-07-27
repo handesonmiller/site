@@ -17,6 +17,26 @@
             justify-content: center; /* Centraliza verticalmente */
             color: #ffffff; /* Cor do texto */
         }
+        header {
+            position: absolute; /* Posiciona o cabeçalho no topo */
+            top: 0;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.7); /* Fundo do cabeçalho preto semitransparente */
+            padding: 10px;
+            text-align: center; /* Centraliza o texto dentro do cabeçalho */
+            z-index: 10; /* Garante que o cabeçalho esteja acima do conteúdo */
+        }
+        header a {
+            color: #ffffff; /* Cor do link no cabeçalho */
+            text-decoration: none; /* Remove o sublinhado do link */
+            padding: 10px 20px; /* Espaçamento interno do link */
+            font-size: 18px; /* Tamanho da fonte do link */
+            border-radius: 5px; /* Arredonda os cantos do link */
+            transition: background-color 0.3s ease; /* Transição suave para a cor de fundo */
+        }
+        header a:hover {
+            background-color: #333333; /* Cor de fundo ao passar o mouse */
+        }
         .title-container {
             padding: 20px;
             border-radius: 10px; /* Cantos arredondados do container */
@@ -29,6 +49,9 @@
     </style>
 </head>
 <body>
+    <header>
+        <a href="index.html">Home</a>
+    </header>
     <div class="title-container">
         <h1>Em construção</h1>
     </div>
