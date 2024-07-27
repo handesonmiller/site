@@ -22,21 +22,19 @@
             padding: 20px;
             border-radius: 10px; /* Cantos arredondados do container */
             background-color: rgba(0, 0, 0, 0.7); /* Fundo do container preto semitransparente */
-            margin-top: 0px; /* Espaço reduzido do topo da página */
-            margin-bottom: 0px; /* Espaço reduzido abaixo do título */
+            margin-top: 0; /* Espaço do topo da página */
         }
         h1 {
             font-size: 50px; /* Tamanho do texto do título */
             margin: 0; /* Remove a margem padrão */
         }
-        footer {
+        .home-menu {
             background-color: rgba(0, 0, 0, 0.7); /* Fundo do menu preto semitransparente */
             padding: 10px;
             border-radius: 5px; /* Arredonda os cantos do menu */
-            margin-bottom: 10px; /* Espaço reduzido abaixo do menu */
-            margin-top: -5px; /* Reduz o espaço acima do menu para subir ele ainda mais */
+            margin-top: 0; /* Espaço reduzido entre o título e o menu */
         }
-        footer a {
+        .home-menu a {
             color: #ffffff; /* Cor do link no menu */
             text-decoration: none; /* Remove o sublinhado do link */
             padding: 10px 20px; /* Espaçamento interno do link */
@@ -44,7 +42,33 @@
             border-radius: 5px; /* Arredonda os cantos do link */
             transition: background-color 0.3s ease; /* Transição suave para a cor de fundo */
         }
-        footer a:hover {
+        .home-menu a:hover {
+            background-color: #333333; /* Cor de fundo ao passar o mouse */
+        }
+        .side-menu {
+            position: fixed; /* Fixa o menu no canto da página */
+            top: 180px; /* Espaço do topo da página, ajustado para baixo */
+            left: 20px; /* Espaço do lado esquerdo da página */
+            display: flex;
+            flex-direction: column; /* Organiza os itens em coluna */
+            align-items: flex-start; /* Alinha os itens no início do contêiner */
+            background-color: rgba(0, 0, 0, 0.7); /* Fundo do menu preto semitransparente */
+            border-radius: 5px; /* Arredonda os cantos do menu */
+            padding: 10px; /* Espaçamento interno do menu */
+        }
+        .side-menu a {
+            color: #ffffff; /* Cor do link no menu */
+            text-decoration: none; /* Remove o sublinhado do link */
+            padding: 10px 20px; /* Espaçamento interno do link */
+            font-size: 18px; /* Tamanho da fonte do link */
+            border-radius: 5px; /* Arredonda os cantos do link */
+            transition: background-color 0.3s ease; /* Transição suave para a cor de fundo */
+            margin-bottom: 5px; /* Espaçamento entre os itens do menu */
+        }
+        .side-menu a:last-child {
+            margin-bottom: 0; /* Remove a margem inferior do último item */
+        }
+        .side-menu a:hover {
             background-color: #333333; /* Cor de fundo ao passar o mouse */
         }
     </style>
@@ -53,8 +77,12 @@
     <div class="title-container">
         <h1>Em construção</h1>
     </div>
-    <footer>
+    <div class="home-menu">
         <a href="index.html">Home</a>
-    </footer>
+    </div>
+    <div class="side-menu">
+        <a href="sobre.html">Sobre</a>
+        <a href="contato.html">Contato</a>
+    </div>
 </body>
 </html>
