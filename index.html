@@ -50,7 +50,8 @@
             border-bottom: 1px solid #000; /* Borda inferior do menu */
             padding: 10px 0; /* Espaçamento interno do menu */
             position: relative; /* Permite posicionar o submenu em relação ao menu */
-            flex-wrap: wrap; /* Permite que os itens do menu quebrem linha se necessário */
+            flex-wrap: nowrap; /* Impede que os itens do menu quebrem linha */
+            overflow-x: auto; /* Permite rolagem horizontal se necessário */
         }
         .navbar a {
             color: #e0e0e0; /* Cor do texto do menu */
@@ -93,13 +94,13 @@
                 font-size: 24px; /* Reduz o tamanho da fonte do título */
             }
             .navbar {
-                flex-direction: column; /* Alinha os itens do menu verticalmente */
-                align-items: center; /* Centraliza os itens do menu */
+                flex-wrap: wrap; /* Permite que os itens do menu quebrem linha se necessário */
+                justify-content: center; /* Centraliza os itens do menu */
             }
             .navbar a {
                 padding: 10px; /* Aumenta o padding dos itens do menu */
                 margin: 5px 0; /* Ajusta a margem entre os itens do menu */
-                width: 100%; /* Faz com que os links do menu ocupem a largura total */
+                width: auto; /* Permite que os links do menu se ajustem ao conteúdo */
                 text-align: center; /* Centraliza o texto dos links */
             }
             main {
@@ -124,10 +125,6 @@
         <a href="emconstrucao.html">Portfólio</a>
         <a href="emconstrucao.html">Blog</a>
         <a href="emconstrucao.html">Contato</a>
-        <a href="emconstrucao.html">FAQ</a>
-        <a href="emconstrucao.html">Termos</a>
-        <a href="emconstrucao.html">Política de Privacidade</a>
-        <a href="emconstrucao.html">Sitemap</a>
     </nav>
 
     <main>
